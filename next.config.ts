@@ -1,12 +1,12 @@
 import type { NextConfig } from "next";
 
-const isProduction = process.env.NODE_ENV === "production";
+const isGitHubPages = process.env.GITHUB_PAGES === "true";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   output: "export",
   trailingSlash: true,
-  basePath: isProduction ? "/bijinwedding" : undefined,
-  assetPrefix: isProduction ? "/bijinwedding/" : undefined,
+  basePath: isGitHubPages ? "/bijinwedding" : undefined,
+  assetPrefix: isGitHubPages ? "/bijinwedding/" : undefined,
 };
 export default nextConfig;

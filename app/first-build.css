@@ -1422,6 +1422,7 @@ footer>* {
   font-size: .9em;
   white-space: nowrap
 }
+
 .hero .date {
   border: 0;
   border-block: 1px solid #b9858266;
@@ -1429,76 +1430,177 @@ footer>* {
   background: transparent;
   padding: 9px 16px;
 }
-.welcome-screen{
-  position:fixed;
-  z-index:100;
-  inset:0;
-  display:grid;
-  place-items:center;
-  padding:24px;
-  background:linear-gradient(135deg,#fcf9f4f7,#f0e5d8f7),url('/watercolour-romance.png') center/cover;
-  text-align:center;
+
+.welcome-screen {
+  position: fixed;
+  z-index: 100;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: linear-gradient(135deg, #fcf9f4f7, #f0e5d8f7), url('/watercolour-romance.png') center/cover;
+  text-align: center;
 }
-.welcome-card{
-  max-width:520px;
-  padding:58px 42px;
-  background:#faf7f2eF;
-  border:1px solid #b9858266;
-  box-shadow:0 24px 70px #5c1d2426;
+
+.welcome-card {
+  max-width: 520px;
+  padding: 58px 42px;
+  background: #faf7f2eF;
+  border: 1px solid #b9858266;
+  box-shadow: 0 24px 70px #5c1d2426;
 }
-.welcome-card h1{margin:8px 0 14px;color:var(--charcoal);font:clamp(38px,6vw,62px)/1.1 'Playfair Display',serif;font-weight:400}
-.welcome-card p:not(.eyebrow){margin:0 auto 28px;color:#6d665b;max-width:360px}
-.welcome-card button{border:0;border-radius:0;padding:13px 23px;background:var(--charcoal);color:#fff;cursor:pointer;font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
-.welcome-card button span{margin-left:8px;color:var(--rose-gold)}
-@media(max-width:720px){.welcome-card{padding:46px 24px}.welcome-card h1{font-size:36px}.welcome-card button{width:100%}}
+
+.welcome-card h1 {
+  margin: 8px 0 14px;
+  color: var(--charcoal);
+  font: clamp(38px, 6vw, 62px)/1.1 'Playfair Display', serif;
+  font-weight: 400
+}
+
+.welcome-card p:not(.eyebrow) {
+  margin: 0 auto 28px;
+  color: #6d665b;
+  max-width: 360px
+}
+
+.welcome-card button {
+  border: 0;
+  border-radius: 0;
+  padding: 13px 23px;
+  background: var(--charcoal);
+  color: #fff;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .16em;
+  text-transform: uppercase
+}
+
+.welcome-card button span {
+  margin-left: 8px;
+  color: var(--rose-gold)
+}
+
+@media(max-width:720px) {
+  .welcome-card {
+    padding: 46px 24px
+  }
+
+  .welcome-card h1 {
+    font-size: 36px
+  }
+
+  .welcome-card button {
+    width: 100%
+  }
+}
 
 /* Refined welcome screen composition. */
-.welcome-screen{
-  display:flex;
-  align-items:center;
-  justify-content:flex-start;
-  overflow:hidden;
-  text-align:left;
-  background:#fcf9f4;
+.welcome-screen {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  text-align: left;
+  background: #fcf9f4;
 }
-.welcome-screen::before{
-  content:'';
-  position:absolute;
-  z-index:0;
-  top:0;
-  right:0;
-  bottom:0;
-  width:min(58vw,760px);
-  background-image:linear-gradient(to right,#fcf9f4 0%,transparent 24%,transparent 78%,#fcf9f4 100%),linear-gradient(to top,#fcf9f4 0%,transparent 28%),url('/watercolour-romance.png');
-  background-position:center,right center,right center;
-  background-size:100% 100%,100% 100%,cover;
-  background-repeat:no-repeat;
-  opacity:.65;
-  mix-blend-mode:multiply;
-  -webkit-mask-image:linear-gradient(to right,transparent 0%,#000 42%,#000 88%,transparent 100%);
-  mask-image:linear-gradient(to right,transparent 0%,#000 42%,#000 88%,transparent 100%);
+
+.welcome-screen::before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(58vw, 760px);
+  background-image: linear-gradient(to right, #fcf9f4 0%, transparent 24%, transparent 78%, #fcf9f4 100%), linear-gradient(to top, #fcf9f4 0%, transparent 28%), url('/watercolour-romance.png');
+  background-position: center, right center, right center;
+  background-size: 100% 100%, 100% 100%, cover;
+  background-repeat: no-repeat;
+  opacity: .65;
+  mix-blend-mode: multiply;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 42%, #000 88%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, #000 42%, #000 88%, transparent 100%);
 }
-.welcome-card{
-  z-index:1;
-  max-width:430px;
-  margin-left:clamp(8vw,14vw,220px);
-  padding:34px 0;
-  background:transparent;
-  border:0;
-  box-shadow:none;
+
+.welcome-card {
+  z-index: 1;
+  max-width: 430px;
+  margin-left: clamp(8vw, 14vw, 220px);
+  padding: 34px 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
 }
-.welcome-card .eyebrow{font-size:10px;letter-spacing:.28em}
-.welcome-card h1{font-size:clamp(38px,5vw,52px);line-height:1.12;letter-spacing:-.025em}
-.welcome-card p:not(.eyebrow){font-size:14px;line-height:1.8;margin-bottom:24px}
-.welcome-card button{padding:12px 20px;font-size:10px;border-radius:6px}
-.welcome-card button span{display:none}
-@media(max-width:720px){
-  .welcome-screen{align-items:flex-start;justify-content:center;padding-top:18vh;text-align:center}
-  .welcome-screen::before{top:auto;width:100%;height:48vh;opacity:.9;background-image:linear-gradient(to right,#fcf9f4 0%,transparent 20%,transparent 80%,#fcf9f4 100%),linear-gradient(to top,#fcf9f4 0%,transparent 30%),url('/watercolour-romance.png');background-size:100% 100%,100% 100%,auto 100%;background-position:center,center,center bottom;background-repeat:no-repeat;mix-blend-mode:multiply;filter:saturate(.72) sepia(.08);-webkit-mask-image:radial-gradient(ellipse at center bottom,#000 10%,#0008 50%,transparent 90%);mask-image:radial-gradient(ellipse at center bottom,#000 10%,#0008 50%,transparent 90%)}
-  .welcome-card{max-width:340px;margin-left:0;padding:24px 0}
-  .welcome-card h1{font-size:35px}
-  .welcome-card p:not(.eyebrow){font-size:13px;line-height:1.65}
-  .welcome-card button{width:auto;padding-inline:20px}
+
+.welcome-card .eyebrow {
+  font-size: 10px;
+  letter-spacing: .28em
+}
+
+.welcome-card h1 {
+  font-size: clamp(38px, 5vw, 52px);
+  line-height: 1.12;
+  letter-spacing: -.025em
+}
+
+.welcome-card p:not(.eyebrow) {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 24px
+}
+
+.welcome-card button {
+  padding: 12px 20px;
+  font-size: 10px
+}
+
+.welcome-card button span {
+  display: none
+}
+
+@media(max-width:720px) {
+  .welcome-screen {
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 18vh;
+    text-align: center
+  }
+
+  .welcome-screen::before {
+    top: auto;
+    width: 100%;
+    height: 48vh;
+    opacity: .9;
+    background-image: linear-gradient(to right, #fcf9f4 0%, transparent 20%, transparent 80%, #fcf9f4 100%), linear-gradient(to top, #fcf9f4 0%, transparent 30%), url('/watercolour-romance.png');
+    background-size: 100% 100%, 100% 100%, auto 100%;
+    background-position: center, center, center bottom;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+    filter: saturate(.72) sepia(.08);
+    -webkit-mask-image: radial-gradient(ellipse at center bottom, #000 10%, #0008 50%, transparent 90%);
+    mask-image: radial-gradient(ellipse at center bottom, #000 10%, #0008 50%, transparent 90%)
+  }
+
+  .welcome-card {
+    max-width: 340px;
+    margin-left: 0;
+    padding: 24px 0
+  }
+
+  .welcome-card h1 {
+    font-size: 35px
+  }
+
+  .welcome-card p:not(.eyebrow) {
+    font-size: 13px;
+    line-height: 1.65
+  }
+
+  .welcome-card button {
+    width: auto;
+    padding-inline: 20px
+  }
 }
 
 /* Watercolour Romance artwork on the hero's right side. */
@@ -1524,6 +1626,7 @@ footer>* {
 }
 
 @media(max-width:720px) {
+
   html,
   body {
     width: 100%;
